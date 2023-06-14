@@ -206,7 +206,7 @@
                 android:text="Bebidas"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="@color/yellow"
+                android:textColor="@color/black"
                 android:paddingLeft="20dp"/>
 
             <androidx.recyclerview.widget.RecyclerView

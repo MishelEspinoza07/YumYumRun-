@@ -13,6 +13,9 @@
         android:theme="@style/Theme.YYR"
         tools:targetApi="31">
         <activity
+            android:name=".confirm_pedido"
+            android:exported="false" />
+        <activity
             android:name=".activity_main"
             android:exported="false" />
         <activity
