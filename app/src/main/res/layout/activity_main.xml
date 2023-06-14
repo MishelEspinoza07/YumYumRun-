@@ -32,13 +32,13 @@
             app:layout_constraintTop_toTopOf="@id/topSection" />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/"..."
-            app:layout_constraintEnd_toEndOf="@id/topSection"
-            app:layout_constraintTop_toTopOf="@id/topSection"
+            android:layout_width="72dp"
+            android:layout_height="59dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/logo"
             app:layout_constraintBottom_toTopOf="@id/busquedaa"
-            android:layout_margin="15dp"/>
+            app:layout_constraintEnd_toEndOf="@id/topSection"
+            app:layout_constraintTop_toTopOf="@id/topSection" />
 
         <EditText
             android:id="@+id/busquedaa"

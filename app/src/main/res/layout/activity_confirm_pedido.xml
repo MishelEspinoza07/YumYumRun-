@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints">
 
+
         <TextView
             android:id="@+id/bienvenido"
             android:layout_width="match_parent"
@@ -28,7 +29,8 @@
             android:background="@color/lead"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/topSection"
-            app:layout_constraintTop_toTopOf="@id/topSection" />
+            app:layout_constraintTop_toTopOf="@id/topSection"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
