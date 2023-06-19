@@ -7,6 +7,8 @@ import com.example.yyr.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+         setTheme(R.style.Base_Theme_YYR)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.signup)
     }
