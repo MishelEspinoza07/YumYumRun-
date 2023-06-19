@@ -101,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password">
 
         <Button
-            android:id="@+id/inicar_sesion"
+            android:id="@+id/bt_iniciar_sesion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/black"
