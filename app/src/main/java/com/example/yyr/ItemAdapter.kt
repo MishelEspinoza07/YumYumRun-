@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.databinding.DataBindingUtil
 import com.example.yyr.databinding.MainItemBinding
 
 
@@ -72,12 +73,7 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
             }
 
-
         }
-
-
-
-
     }
 
     fun addPresentationCards(list: List<FoodItem>) {

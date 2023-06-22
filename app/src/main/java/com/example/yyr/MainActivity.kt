@@ -7,6 +7,8 @@ import android.widget.Toast
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.content.Intent
+import androidx.databinding.DataBindingUtil
+import com.example.yyr.databinding.MainItemBinding
 
 class MainActivity : AppCompatActivity() {
 
