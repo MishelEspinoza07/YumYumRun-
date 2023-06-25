@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
 
          setTheme(R.style.Base_Theme_YYR)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signup)
+        setContentView(R.layout.calificanos)
     }
 }

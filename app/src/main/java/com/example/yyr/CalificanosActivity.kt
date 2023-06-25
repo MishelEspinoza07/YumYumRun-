@@ -16,7 +16,7 @@ class CalificanosActivity : AppCompatActivity(){
         binding.textIdCali.setOnClickListener {
             Toast.makeText(
                 applicationContext,
-                "Muchas Gracias por calificarnos!!", Toast.LENGTH_SHORT
+                "Gracias por calificarnos!!", Toast.LENGTH_SHORT
             ).show()
         }
 
