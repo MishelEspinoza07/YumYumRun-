@@ -18,7 +18,16 @@
         >
     </ImageView>
 
-    >
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:progressBackgroundTint="@color/yellow"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_id_ty" />
 
     <Button
         android:id="@+id/text_id_cali"
@@ -32,8 +41,6 @@
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="252dp"></Button>
         app:layout_constraintRight_toRightOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="341dp"></Button>
@@ -54,19 +61,11 @@
         app:layout_goneMarginTop="200dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="51dp"></TextView>
-        app:layout_goneMarginTop="200dp"
-        tools:layout_editor_absoluteY="77dp"></TextView>
 
     <TextView
         android:id="@+id/text_id_tyty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:gravity="center"
-        android:padding="3sp"
-        android:text="Gracias por confiar en YumYumRun."
-        android:textColor="@color/orange"
-        android:textSize="20sp"
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:padding="3sp"
@@ -83,12 +82,6 @@
         android:id="@+id/text_id_tytyty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:gravity="center"
-        android:padding="3sp"
-        android:text="Quiere hacer un nuevo pedido?"
-        android:textColor="@color/black"
-        android:textSize="30sp"
         android:layout_marginTop="84dp"
         android:gravity="center"
         android:padding="3sp"
