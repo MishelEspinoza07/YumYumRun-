@@ -4,28 +4,27 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.yyr.databinding.ActivityDireccionPagoBinding
 
-class direccion_pago : AppCompatActivity() {
+class Activity_Direccion_Pago : AppCompatActivity() {
 
-    private lateinit var binding: direccionPagoBinding
+    private lateinit var binding:Activity_Direccion_Pago
 
     companion object {
         val MontoTotal: String ="0"
     }
 
     var zonasDisponibles: List<Zonas> = listOf(
-        Zonas(0, "San Pedro"),
-        Zonas (1, "Tembladerani"),
-        Zonas (2, "San Antonio"),
-        Zonas (3, "Miraflores" ),
-        Zonas (4, "Obrajes"),
-        Zonas (5, "<Ipavi"),
-        Zonas (6, "irpavi 2"),
+        Zonas(0, "Miraflores"),
+        Zonas (1, "Irpavi"),
+        Zonas (2, "Irpavi 2"),
+        Zonas (3, "Obrajes" ),
+        Zonas (4, "San Pedro"),
+        Zonas (5, "San Antonio"),
+        Zonas (6, "Tempbladerani"),
 
     )
 
@@ -121,7 +120,7 @@ class direccion_pago : AppCompatActivity() {
 
     fun iniciarRecyclerView () {
         binding.zonaRecycler.layoutManager = LinearLayoutManager(this)
-        binding.ZonaRecycler.adapter = ZonaSucursalAdaper(zonasDisponibles, {llave -> zonaSelecionada(llave)} )
+        binding.ZonaRecycler.adapter = ZonaSucursalAdapter(zonasDisponibles, {llave -> zonaSelecionada(llave)} )
         }
 
 
