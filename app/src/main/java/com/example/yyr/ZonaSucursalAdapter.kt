@@ -23,4 +23,3 @@ private val onClickListener: (Int)-> Unit):
         }
 }
 
-}

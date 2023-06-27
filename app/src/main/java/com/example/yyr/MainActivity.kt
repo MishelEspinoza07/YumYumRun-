@@ -8,7 +8,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.content.Intent
 import androidx.databinding.DataBindingUtil
-import com.example.yyr.databinding.MainItemBinding
+import com.example.yyr.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         FoodItem(R.drawable.pizza, "Pizza", 50, false, 0),
         FoodItem(R.drawable.pollo_frito, "Pollo", 20, false, 0),
         FoodItem(R.drawable.hot_dog, "Hot Dog", 8, false, 0),
-        FoodItem(R.drawable.tacos, "Tacos 3U", 30, false 0),
+        FoodItem(R.drawable.tacos, "Tacos 3U", 30, false, 0),
         FoodItem(R.drawable.club_sandwich, "Club Sandwich", 40, false, 0),
     )
     var bebidasList = mutableListOf<FoodItem>(
