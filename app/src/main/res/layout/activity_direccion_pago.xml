@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".direccion_pago"
+    tools:context=".Activity_Direccion_Pago"
     android:background="@color/black"
     >
 

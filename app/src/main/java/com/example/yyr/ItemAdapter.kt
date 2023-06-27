@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.databinding.DataBindingUtil
-import com.example.yyr.databinding.MainItemBinding
+import com.example.yyr.databinding.ActivityMainItemBinding
 
 
 class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
@@ -18,10 +18,10 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ItemViewHolder {
         context = parent.context
         return ItemViewHolder(
-            MainItemBinding.inflate (
+            ActivityMainItemBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
-                    )
+                   false )
                 )
     }
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
@@ -38,7 +38,7 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     }
 
-    inner class ItemViewHolder(private val binding: MainItemBinding) :
+    inner class ItemViewHolder(private val binding: ActivityMainItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun binding(data: FoodItem) {
             binding.food.text = data.nombre
