@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.databinding.DataBindingUtil
-import com.example.yyr.databinding.MainItemBinding
 
 
 class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
@@ -21,7 +20,7 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
             MainItemBinding.inflate (
                 LayoutInflater.from(parent.context),
                 parent,
-                    )
+                  false  )
                 )
     }
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
