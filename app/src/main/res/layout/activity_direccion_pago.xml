@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Direccion_Pago"
+    tools:context=".DireccionPago"
     android:background="@color/black"
     >
 
@@ -138,6 +138,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:cardCornerRadius="0dp"
                         android:backgroundTint="#221919">
+
                     </androidx.cardview.widget.CardView>
 
                     <Button
@@ -352,16 +353,17 @@
             />
 
         <ImageButton
+            android:id="@+id/goNext"
             android:layout_width="140dp"
             android:layout_height="40dp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cambioEsperado"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/continuar_2"
             android:background="@drawable/borde"
-            android:id="@+id/goNext"
-            />
+            android:src="@drawable/continuar_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalDar"
+            app:layout_constraintVertical_bias="0.637" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

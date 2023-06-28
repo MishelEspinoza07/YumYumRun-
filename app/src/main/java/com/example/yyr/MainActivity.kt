@@ -8,6 +8,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.content.Intent
 import androidx.databinding.DataBindingUtil
+import com.example.yyr.databinding.ActivityDireccionPagoBinding
 import com.example.yyr.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         setDefault()
         binding.ButtonPedir.setOnClickListener{
             if(total!=0){
-                val intentRedirect = Intent(this, Activity_Direccion_Pago::class.java)
+                val intentRedirect = Intent(this, DireccionPago::class.java)
                 intentRedirect.apply {
                     putExtra(MontoTotal,total.toString())
                 }

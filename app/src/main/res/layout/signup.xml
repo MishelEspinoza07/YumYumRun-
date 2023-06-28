@@ -2,7 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/signup"
@@ -13,7 +14,7 @@
         android:text="SING UP"
         android:textColor="@color/black"
         android:textSize="40dp"
-         />
+        />
 
     <TextView
         android:id="@+id/Emaill"
@@ -22,11 +23,12 @@
         android:layout_marginTop="250dp"
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="3dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="17dp"
         android:hint="Email" />
 
     <EditText
+        android:backgroundTint="@color/white"
         android:id="@+id/editTextEmail"
         android:layout_marginLeft="40dp"
         android:layout_width="340dp"
@@ -43,10 +45,12 @@
         android:layout_marginTop="310dp"
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="3dp"
+        android:textColor="@color/white"
         android:textSize="17dp"
         android:hint="Password" />
 
     <EditText
+        android:backgroundTint="@color/white"
         android:id="@+id/editTextPassword"
         android:layout_marginLeft="40dp"
         android:layout_width="340dp"
@@ -57,25 +61,25 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/buttonSignUp"
+        android:id="@+id/buttonContinuar"
         style="@style/button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/editTextPassword"
         android:layout_marginTop="30dp"
-        android:text="Continue" />
-
-    <TextView
-        android:id="@+id/textViewSignUp"
-        android:layout_width="wrap_content"
+        android:text="Continuar" />
+    <Button
+        android:id="@+id/buttonCancelar"
+        style="@style/button"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/buttonSignUp"
-        android:text="Have an account? Sign up" />
+        android:layout_below="@+id/buttonContinuar"
+        android:layout_marginTop="10dp"
+        android:text="Cancelar" />
+
 
 </RelativeLayout>
-
-
 
 

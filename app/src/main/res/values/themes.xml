@@ -5,17 +5,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.YYR" parent="Base.Theme.YYR" />
-<<<<<<<<< Temporary merge branch 1
-=========
-
     <style name="button">
         <item name="cornerRadius">40dp</item>
         <item name="backgroundTint">#FF6E1D</item>
     </style>
-    
-    <style name="SplashTheme" parent="Base.Theme.YYR">
-        <item name="android:windowBackground">@drawable/splash</item>
-    </style>
->>>>>>>>> Temporary merge branch 2
+
 </resources>

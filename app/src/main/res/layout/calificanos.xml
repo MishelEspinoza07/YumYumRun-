@@ -4,30 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalificanosActivity"
-    >
+    tools:context=".CalificanosActivity">
+
     <ImageView
         android:id="@+id/listo"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:src="@drawable/check"
-        android:layout_marginTop="60dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        >
-    </ImageView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingContraints"
+        ></ImageView>
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:progressBackgroundTint="#FFFF00"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_id_ty" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listo" />
 
     <Button
         android:id="@+id/text_id_cali"
@@ -39,11 +36,13 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="341dp"></Button>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        tools:ignore="MissingConstraints"></Button>
 
     <TextView
         android:id="@+id/text_id_ty"
@@ -55,12 +54,14 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/listo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_goneMarginTop="200dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="51dp"></TextView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"></TextView>
 
     <TextView
         android:id="@+id/text_id_tyty"
@@ -73,10 +74,12 @@
         android:textColor="@color/orange"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_id_cali"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/text_id_cali"
+        app:layout_constraintVertical_bias="0.021"></TextView>
 
     <TextView
         android:id="@+id/text_id_tytyty"
@@ -89,40 +92,38 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_id_tyty"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/text_id_tyty"
+        app:layout_constraintVertical_bias="0.0"></TextView>
 
     <Button
         android:id="@+id/yes_button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/orange"
+        android:text="Si"
         android:textColor="@color/black"
         android:textSize="40sp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="25dp"
-        android:text="Si"
-        android:backgroundTint="@color/orange">
-    </Button>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></Button>
 
     <Button
         android:id="@+id/no_buttom"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/orange"
+        android:text="No"
         android:textColor="@color/black"
         android:textSize="40sp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginRight="25dp"
-        android:text="No"
-        android:backgroundTint="@color/orange">
-    </Button>
-
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
